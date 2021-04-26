@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj introductory website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            /* color: black; */
+            margin: 0px;
+            padding: 0px;
+
+            background: url("bg.7.jpg");
+
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            /* border: 2px solid rgb(151, 187, 175); */
+        }
+
+        .left img {
+            width: 120px;
+        }
+
+        .left div {
+            text-align: center;
+            font-family: unset;
+            color: white;
+        }
+
+        .mid {
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin: 25px auto;
+            /* border: 2px solid rgb(109, 78, 150); */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 40px;
+            display: inline-block;
+            /* border: 2px solid rgb(89, 133, 53); */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .btn  {
+            margin: 0px 10px;
+            border: 2px solid rgb(16, 15, 15);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            /* padding: 4px 14px; */
+        }
+
+        .btn:hover {
+            background-color: rgb(211, 163, 211);
+
+        }
+
+        .spinner div {
+            position: absolute;
+            margin: 320px;
+            width: 120px;
+            height: 120px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 120px;
+            font-size: 100px;
+        }
+
+        .spinner .face1 {
+            -webkit-transform: translateZ(60px);
+            -ms-transform: translateZ(60px);
+            transform: translateZ(60px);
+        }
+
+        .spinner .face2 {
+            -webkit-transform: rotateY(90deg) translateZ(60px);
+            -ms-transform: rotateY(90deg) translateZ(60px);
+            transform: rotateY(90deg) translateZ(60px);
+        }
+
+        .spinner .face3 {
+            -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+            -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+            transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+        }
+
+        .spinner .face4 {
+            -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+            -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+        }
+
+        .spinner .face5 {
+            -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+            -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+        }
+
+        .spinner .face6 {
+            -webkit-transform: rotateX(-90deg) translateZ(60px);
+            -ms-transform: rotateX(-90deg) translateZ(60px);
+            transform: rotateX(-90deg) translateZ(60px);
+        }
+
+        .spinner {
+            -webkit-animation: spincube 12s ease-in-out infinite;
+            animation: spincube 12s ease-in-out infinite;
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 60px 60px 0;
+            -ms-transform-origin: 60px 60px 0;
+            transform-origin: 60px 60px 0;
+        }
+
+        @-webkit-keyframes spincube {
+            16% {
+                -webkit-transform: rotateY(-90deg);
+            }
+
+            33% {
+                -webkit-transform: rotateY(-90deg) rotateZ(90deg);
+            }
+
+            50% {
+                -webkit-transform: rotateY(180deg) rotateZ(90deg);
+            }
+
+            66% {
+                -webkit-transform: rotateY(90deg) rotateX(90deg);
+            }
+
+            83% {
+                -webkit-transform: rotateX(90deg);
+            }
+        }
+
+        @keyframes spincube {
+            16% {
+                -ms-transform: rotateY(-90deg);
+                transform: rotateY(-90deg);
+            }
+
+            33% {
+                -ms-transform: rotateY(-90deg) rotateZ(90deg);
+                transform: rotateY(-90deg) rotateZ(90deg);
+            }
+
+            50% {
+                -ms-transform: rotateY(180deg) rotateZ(90deg);
+                transform: rotateY(180deg) rotateZ(90deg);
+            }
+
+            66% {
+                -ms-transform: rotateY(90deg) rotateX(90deg);
+                transform: rotateY(90deg) rotateX(90deg);
+            }
+
+            83% {
+                -ms-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+            }
+        }
+
+        .ml6 {
+            position: relative;
+            font-weight: 900;
+            font-size: xxx-large;
+            color: whitesmoke
+        }
+
+        .ml6 .text-wrapper {
+            position: relative;
+            margin-left: 1060px;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml6 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Raj Logo.jpg" alt="">
+            <div>Raj Singh website.</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Index.html" class="active"> Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="My Skill.html">My Skills</a></li>
+                <li><a href="my gallary.html">My Gallary</a></li>
+                <li><a href="Contact me.html">Contact me</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"><a href='My Friends.html' alt='Broken Link'>My Friends</a></button>
+            <button class="btn"><a href='My College.html' alt='Broken Link'>My College</a></button>
+            <!-- <button class="btn">My Friends</button> -->
+            <!-- <button class="btn">My College</button> -->
+        </div>
+        <div id="stage" style="width: 120px; height: 120px;">
+            <div class="spinner">
+                <div class="face1">R</div>
+                <div class="face2">C</div>
+                <div class="face3">L</div>
+                <div class="face4">V</div>
+                <div class="face5">I</div>
+                <div class="face6">G</div>
+            </div>
+        </div>
+        <h1 class="ml6">
+
+            <span class="text-wrapper">
+
+                <span class="letters">Hello World ! "Welcome to # Raj Singh." </span>
+
+            </span>
+        </h1>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </div>
+    </header>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml6 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml6 .letter',
+                translateY: ["1.1em", 0],
+                translateZ: 0,
+                duration: 750,
+                delay: (el, i) => 50 * i
+            }).add({
+                targets: '.ml6',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+</body>
+
+</html>
